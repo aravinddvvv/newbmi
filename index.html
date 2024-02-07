@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+   <link rel="stylesheet" href="./style.css">
+   <!-- bootstrap -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+   crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+   integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+   href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Roboto+Slab:wght@200&family=Shadows+Into+Light&display=swap"
+   rel="stylesheet">
+</head>
+    
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+  
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-0 mt-lg-0" href="#">
+           <h1>BODY MASS INDEX (BMI)</h1>
+          </a>
+          <!-- Left links -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"></div>
+          <ul class="navbar-nav me-auto mb-3 mb-lg-0 mx-4 justify-content-end p-4">
+            <li class="nav-item active ">
+              <h5> <a class="nav-link " href="#">Home</a></h5>
+            </li>
+            <li class="nav-item">
+              <h5><a class="nav-link" href="#">Checkups</a></h5>
+            </li>
+            <li class="nav-item">
+              <h5><a class="nav-link" href="#" > Plans </a></h5>
+            </li>
+            <li class="nav-item">
+              <h5><a class="nav-link" href="#">Benefits</a></h5>
+            </li>
+           
+          </ul>
+  
+        </div>
+      </div>
+    </nav>
+  
+    <div class="row">
+      <div class="col-6" style="background-color: white;">
+        <br><br><br>
+        <h1 class="text-center " style="color: black;"><B> What is BMI ? </B></h1><br>
+        <h4 class="text-center" style="color: rgb(1, 1, 15);">Body mass index (BMI) is a measure of a person's weight in relation to their height. BMI is calculated by dividing a person's weight in kilograms by the square of their height in meters. For example, a BMI of 25 means 25kg/m2.</h4> <br>
+        <h4 class="text-center"> <b>BMI is often considered an indicator of body fatness. However, it's a surrogate measure of body fat because it measures excess weight rather than excess fat.</b></h4>
+        <br>
+        <h1> <b>You can check your current BMI using the BMI calculator given below </b></h1>
+      </div>
+      <div class="col-6">
+        <img src="./images/bmi.png" class="figure-img img-fluid rounded"
+          alt="A generic square placeholder image with rounded corners in a figure.">
+  
+      </div>
+    </div>
+     </div>
+      </div>
+
+   
+    <center>
+            <div style="margin-top: 60px;" class="container">
+            <h1>BMI Calculator</h1>
+            <form id="bmiForm">
+                <div class="input-group">
+                   
+                    <input type="number" placeholder="Enter your height in cm" id="height" name="height" required>
+                </div>
+                <div class="input-group">
+                    
+                    <input type="number" placeholder="Enter your weight in kg" id="weight" name="weight" required>
+                </div>
+                <center>
+                <button type="submit" class="btn" style="background-color: rgb(42, 135, 62); color: black;"><b>Calculate </b></button>
+                <button type="reset" class="btn" style="background-color: rgb(250, 189, 19); color: black;"> <b>Reset</b></button>
+                </center>
+            </form>
+            <section class="bmiscale">
+                <div style="--color:var(--underweight)">
+                    <h4>Underweight</h4>
+                    <p><b>&lt;18.5 </b></p>
+                </div>
+    
+                <div style="--color:var(--normal)">
+                    <h4>Normal</h4>
+                    <p><b>18.5 - 25 </b></p>
+                </div>
+    
+                <div style="--color:var(--overweight)">
+                    <h4>Overweight</h4>
+                    <p><b>25 - 30 </b></p>
+                </div>
+    
+                <div style="--color:var(--very_overweight)">
+                    <h4>dead</h4>
+                    <p>><b>30 </b> </p>
+                </div>
+    
+            </section>
+    
+            <h2 id="result"></h2>
+            <p class="comment"></p>
+
+        </div>
+     </div>
+     </center>
+     <br><br>
+     <footer>
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+           
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgb(225, 177, 21);">
+              © 2023 Copyright:
+              <a class="text-white" >BMI.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+        
+
+
+
+
+
+    <script>
+        document.getElementById('bmiForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const height = parseFloat(document.getElementById('height').value) / 100;
+            const weight = parseFloat(document.getElementById('weight').value);
+
+            const bmi = weight / Math.pow(height, 2);
+
+            document.getElementById('result').textContent = 'Your BMI is: ' + bmi.toFixed(2);
+            var res='';
+            if (bmi<18.5){
+                res= "Underweight";
+                }else if(bmi>=18.5 && bmi<=24.9){
+                    res= "Normal Weight";
+                    } else if(bmi>=25 && bmi<=29.9){
+                        res= "Overweight";
+                        } else{
+                            res= "Obese";
+                            };
+                            resultArea.style.display = "block";
+document.querySelector(".comment").innerHTML = `You are <span id="comment">${result}</span>`;
+
+
+
+}
+);
+
+
+
+            
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 50%;
+max-width: 30px;
+background-color: rgb(118, 180, 200);
+padding: 1rem;
+border-radius: 15px;
+box-shadow: 0 15px 25px rgb(8, 1, 16);
+display: grid;
+gap: 1rem;
+
+}
+.input-group {
+    margin-bottom: 20px;
+}
+:root{
+--underweight:orange;
+--normal:green;
+--overweight:red;
+--very_overweight:purple;
+
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group input {
+    flex: 1;
+border: 1px solid white;
+border-radius: 10px;
+padding: 10px;
+outline-color:brown ;
+font-size:1.25rem ;
+text-align: center;
+width: 400px;
+}
+.btn {
+    width: 105px;
+height: 41px;
+background-color: rgba(83, 11, 218, 0.857);
+color: black;
+border-radius: 10px;
+cursor: pointer;
+font-size:20px ;
+border: 2px solid rgb(0, 14, 8) ;
+outline:white;
+
+}
+.btn:hover {
+    background-color: rgb(53, 18, 194);
+outline: white;
+border: 2px solid rgb(0, 14, 8) ;
+}
+h1{
+    text-align: center;
+}
+.bmiscale{
+display: flex;
+
+}
+.bmiscale div{
+flex: 1;
+text-align: center;
+text-transform: uppercase;
+border-top: 5px solid var(--color);
+padding: 10
+
+}
+.bmiscale h4{
+font-size: 1rem;
+color: rgb(0, 5, 9);
+
+}
+h2{
+text-align: center;
+}
